@@ -1,0 +1,158 @@
+:root {
+    --1: #d13838;
+    --2: #000000;
+    --3: #ffffff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.HeaderLogo>h1>span {
+    color: var(--1);
+}
+
+.HeaderButtons {
+    margin-right: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.HeaderButtons>a {
+    color: var(--2);
+    font-size: larger;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+.HeaderButtons>a:hover {
+    color: var(--1);
+    transition: all .2s ease-in-out;
+}
+
+.Media a {
+    background: none;
+    border-radius: 50%;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--1);
+}
+
+article {
+    width: 100%;
+    padding: 0px 100px;
+    color: var(--3);
+    position: relative;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--1);
+}
+
+.Hello {
+    margin-bottom: 30px;
+}
+
+.Hello>h2 {
+    font-weight: 100;
+}
+
+.Hello>h2>span {
+    font-weight: 600;
+}
+
+.Presentation {
+    color: #e2e2e2;
+    margin-bottom: 25px;
+}
+
+.ButtonsCTA {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 20px;
+}
+
+.ButtonsCTA>button {
+    padding: 8px;
+    color: var(--3);
+    font-weight: 600;
+    font-size: larger;
+    text-decoration: none;
+    background: none;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.ButtonsCTA>button:first-child {
+    border-radius: 12px;
+    border: 3px solid var(--3);
+}
+
+.ButtonsCTA>button:first-child:hover {
+    background: #00000077;
+    transition: all .3s ease-in-out;
+}
+
+.ButtonsCTA>button:last-child {
+    border: none;
+}
+
+.ButtonsCTA>button:last-child:hover {
+    color: #00000077;
+    transition: all .3s ease-in-out;
+}
+
+.SocialMedia {
+    width: 100%;
+    padding: 25px 40px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--1);
+}
+
+.Media {
+    list-style: none;
+    margin: 0px 0px 30px 50px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.SocialMedia>h5 {
+    color: var(--3);
+}
